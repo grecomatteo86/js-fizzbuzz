@@ -11,15 +11,15 @@ for ( var i = 1; i <= 100; i++) {
   in cima alle condizioni metto sempre la più specifica
   */
   if (i % 3 == 0 && i % 5 == 0){
-    console.log('FizzBuzz');
+    document.getElementById('lista').innerHTML = document.getElementById('lista').innerHTML + '<li> FizzBuzz </li>';
     // 3. intercetto i multipli di 3 e stampo
   } else if (i % 3 == 0) {
-    console.log('Fizz');
+    document.getElementById('lista').innerHTML = document.getElementById('lista').innerHTML + '<li> Fizz </li>';
     // 4. intercetto i multipli di 5 e stampo
   } else if (i % 5 == 0) {
-    console.log('Buzz');
+    document.getElementById('lista').innerHTML = document.getElementById('lista').innerHTML + '<li> Buzz </li>';
     // 5. stampo il resto dei numeri
   } else {
-    console.log(i);
+    document.getElementById('lista').innerHTML = document.getElementById('lista').innerHTML + '<li>' + i + '</li>';
   }
 }
